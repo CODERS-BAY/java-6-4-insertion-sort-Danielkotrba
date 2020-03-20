@@ -3,10 +3,15 @@ import java.util.Arrays;
 public class Main {
     public static void main(String[] args) {
 
-    int[] numbers = {7, 87, 9, 51, -8, 64};
+        int[] numbers = {7, 87, 9, 51, -8, 64};
         System.out.println(Arrays.toString(numbers));
 
-        for (int i = 1; i < numbers.length;i++){
+        array(numbers);
+
+    }
+
+    private static void array(int[] numbers) {
+        for (int i = 1; i < numbers.length; i++) {
             int unsorted = numbers[i];
             int temp = i - 1;
 
