@@ -5,11 +5,8 @@ public class Main {
 
         int[] numbers = {7, 87, 9, 51, -8, 64};
         System.out.println(Arrays.toString(numbers));
-
         array(numbers);
-
     }
-
     private static void array(int[] numbers) {
         for (int i = 1; i < numbers.length; i++) {
             int unsorted = numbers[i];
@@ -22,6 +19,5 @@ public class Main {
             numbers[temp + 1] = unsorted;
             System.out.println(Arrays.toString(numbers));
         }
-
     }
 }
